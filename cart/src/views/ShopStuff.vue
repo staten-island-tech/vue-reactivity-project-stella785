@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ShopCard v-for="item in items" :key="item.name" {{ item.name }} :item="item"/>
+        <ShopCard v-for="item in items" :key="item.name" :item="item"/>
     </div>
 </template>
 
