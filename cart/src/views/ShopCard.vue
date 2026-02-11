@@ -2,11 +2,12 @@
     <div>
         <h2>{{ item.name }}</h2>
         <h3>{{ item.price }}</h3>
-        <button>Buy</button>
+        <button @click="">Buy</button>
     </div>
 </template>
 
 <script setup>
+import BuyList from './BuyList.vue';
 defineProps({
     item:{
         type: Object,
@@ -16,7 +17,5 @@ defineProps({
 </script>
 
 <style scoped>
-div{
 
-}
 </style>
