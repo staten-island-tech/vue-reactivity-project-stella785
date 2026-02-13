@@ -1,13 +1,15 @@
 <template>
-    <div>
+    <div class="card">
         <h2>{{ item.name }}</h2>
         <h3>{{ item.price }}</h3>
+        <img src="" alt="">
         <button @click="addToCart">Buy</button>
     </div>
 </template>
 
 <script setup>
 import BuyList from './BuyList.vue';
+import MainScreen from './MainScreen.vue';
 defineProps({
     item:{
         type: Object,
@@ -15,18 +17,17 @@ defineProps({
     },
 })
 
-const totalPrice = ref(0);
-const price = ref(0);
-const cart = ref([
 
-]);
-function addtoCart() {
-    //add price of selected cards
-    totalPrice = item[price]++;
-    //push selected cards to the cart
-}
 </script>
 
 <style scoped>
+.card {
+    background-color: #ffffff;
+    width: 30%;
+    border: 3px solid #c0c0c0;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
 
 </style>
