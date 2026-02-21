@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>Shop</h1>
-        <ShopStuff />
-        <BuyList/>
+        <ShopStuff @add-to-cart="addToCart"/>
+        <BuyList :cart="cart" :totalPrice="totalPrice"/>
     </div>
 </template>
 
