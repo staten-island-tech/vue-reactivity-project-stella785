@@ -11,11 +11,13 @@ const items = ref([
     {
         name: 'Kobe IX Elite Low EM Protro',
         price: 190,
+        image: "/kobe.avif"
 //image here
     },
     {
         name: 'Giannis Immortality 4',
         price: 79,
+        image: "/giannis.avif"
     }
 ])
 </script>

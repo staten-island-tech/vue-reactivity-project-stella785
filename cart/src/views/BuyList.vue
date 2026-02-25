@@ -1,8 +1,8 @@
 <template>
     <div class="stuff">
         <h1>Cart</h1>
-        <li>{{ item.name }}: ${{item.price}}</li>
-        <p>Total: ${{ totalPrice }}</p>
+        <li>{{}}</li>
+        <p>Total:{{ totalPrice }}</p>
     </div>
 </template>
 
