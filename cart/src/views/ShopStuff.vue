@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ShopCard v-for="item in items" :key="item.name" :item="item" @add-to-cart="addToCart"/>
+    <ShopCard v-for="item in items" :key="item.name" :item="item"/>
     </div>
 </template>
 
@@ -11,13 +11,12 @@ const items = ref([
     {
         name: 'Kobe IX Elite Low EM Protro',
         price: 190,
-        image: "/kobe.avif"
-//image here
+        image: '/kobe.avif'
     },
     {
         name: 'Giannis Immortality 4',
         price: 79,
-        image: "/giannis.avif"
+        image: '/giannis.avif'
     }
 ])
 </script>

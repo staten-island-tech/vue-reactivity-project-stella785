@@ -14,10 +14,12 @@ const totalPrice = ref(0);
 const cart = ref([
 
 ]);
+function addPrice() {
+    totalPrice += item.price;
+}
 
 function addToCart(item) {
     cart.value.push(item);
-    totalPrice += item.price;
 }
 </script>
 

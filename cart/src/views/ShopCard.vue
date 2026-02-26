@@ -2,13 +2,13 @@
     <div class="card">
         <h2>{{ item.name }}</h2>
         <h3>${{ item.price }}</h3>
-        <img src="/kobe.avif" alt="">
-        <button @click="addToCart">Buy</button>
+        <img src="" alt="">
+        <button @click="addPrice">Buy</button>
     </div>
 </template>
 
 <script setup>
-
+import ShopStuff from './ShopStuff.vue';
 defineProps({
     item:{
         type: Object,

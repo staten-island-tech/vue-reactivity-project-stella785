@@ -1,7 +1,7 @@
 <template>
     <div class="stuff">
         <h1>Cart</h1>
-        <li>{{}}</li>
+        <li>{{cart}}</li>
         <p>Total:{{ totalPrice }}</p>
     </div>
 </template>
