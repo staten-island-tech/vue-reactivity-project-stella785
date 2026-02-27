@@ -1,5 +1,6 @@
 <template>
   <div>
+    <RouterLink to="/home"></RouterLink>
     <RouterView/>
   </div>
 </template>

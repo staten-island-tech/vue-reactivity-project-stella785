@@ -2,7 +2,7 @@
     <div class="stuff">
         <h1>Cart</h1>
         <li>{{cart}}</li>
-        <p>Total:{{ totalPrice }}</p>
+        <p>Total: ${{ totalPrice }}</p>
     </div>
 </template>
 

@@ -1,7 +1,9 @@
 <template>
     <div>
         <h1>Shop</h1>
-        <ShopStuff :addToCart="addToCart"/>
+        <ShopStuff :addToCart="addToCart"> 
+            <button @click="addToCart(item)">Buy</button>
+        </ShopStuff>
         <BuyList :cart="cart" :totalPrice="totalPrice"/>
     </div>
 </template>
@@ -15,7 +17,8 @@ const cart = ref([
 
 ]);
 function addToCart(item) {
-    cart.value.push(item);
+    cart.value.push(item.name);
+    cart.value.push(item.price);
     totalPrice.value += item.price;
 }
 </script>
