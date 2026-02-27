@@ -2,8 +2,8 @@
     <div class="card">
         <h2>{{ item.name }}</h2>
         <h3>${{ item.price }}</h3>
-        <img src="" alt="">
-        <button @click="addPrice">Buy</button>
+        <img :src="item.image" :alt="item.name">
+        <button @click="addToCart(item)">Buy</button>
     </div>
 </template>
 
@@ -14,6 +14,9 @@ defineProps({
         type: Object,
         required: true,
     },
+    addToCart:{
+        type: Function,
+    }
 })
 
 

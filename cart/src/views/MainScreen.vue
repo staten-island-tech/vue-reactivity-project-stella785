@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>Shop</h1>
-        <ShopStuff @add-to-cart="addToCart"/>
-        <BuyList />
+        <ShopStuff :addToCart="addToCart"/>
+        <BuyList :cart="cart" :totalPrice="totalPrice"/>
     </div>
 </template>
 
@@ -14,12 +14,9 @@ const totalPrice = ref(0);
 const cart = ref([
 
 ]);
-function addPrice() {
-    totalPrice += item.price;
-}
-
 function addToCart(item) {
     cart.value.push(item);
+    totalPrice.value += item.price;
 }
 </script>
 

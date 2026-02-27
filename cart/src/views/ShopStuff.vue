@@ -1,12 +1,17 @@
 <template>
     <div>
-    <ShopCard v-for="item in items" :key="item.name" :item="item"/>
+    <ShopCard v-for="item in items" :key="item.name" :item="item" :addToCart="addToCart"/>
     </div>
 </template>
 
 <script setup>
 import {ref} from 'vue'
 import ShopCard from './ShopCard.vue';
+defineProps({
+    addToCart:{
+        type: Function,
+    }
+})
 const items = ref([
     {
         name: 'Kobe IX Elite Low EM Protro',
