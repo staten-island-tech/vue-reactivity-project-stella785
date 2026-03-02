@@ -1,6 +1,8 @@
 <template>
     <div>
-    <ShopCard v-for="item in items" :key="item.name" :item="item" :addToCart="addToCart"/>
+    <ShopCard v-for="item in items" :key="item.name" :item="item">
+        <button>Add to Cart</button>
+    </ShopCard>
     </div>
 </template>
 
@@ -22,6 +24,16 @@ const items = ref([
         name: 'Giannis Immortality 4',
         price: 79,
         image: '/giannis.avif'
+    },
+    {
+        name: 'Ja 3 "Warning Label"',
+        price: 117,
+        image: '/ja3.avif'
+    },
+    {
+        name: 'Ja 2',
+        price: 97,
+        image: '/ja2.avif'
     }
 ])
 </script>
