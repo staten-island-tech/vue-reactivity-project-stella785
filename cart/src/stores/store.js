@@ -1,13 +1,12 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-    cart: [],
-    totalPrice: 0,
+  cart: [],
+  totalPrice: 0,
+  addToCart(item) {
+    this.cart.push(item)
+    this.totalPrice += item.price
+  },
 })
-
-function addToCart(item) {
-    store.cart.push(item)
-    store.totalPrice += item.price
-}
 
 export {addToCart}
