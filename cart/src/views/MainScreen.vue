@@ -10,15 +10,7 @@
 import {ref} from 'vue'
 import ShopStuff from './ShopStuff.vue';
 import BuyList from './BuyList.vue';
-const totalPrice = ref(0);
-const cart = ref([
 
-]);
-function addToCart(item) {
-    cart.value.push(item.name);
-    cart.value.push(item.price);
-    totalPrice.value += item.price;
-}
 </script>
 
 <style scoped>

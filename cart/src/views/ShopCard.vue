@@ -4,7 +4,6 @@
         <h3>${{ item.price }}</h3>
         <img :src="item.image" :alt="item.name">
         <slot></slot>
-        <!-- <button @click="addToCart(item)">Buy</button> -->
     </div>
 </template>
 

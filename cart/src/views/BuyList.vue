@@ -1,8 +1,8 @@
 <template>
     <div class="stuff">
         <h1>Cart</h1>
-        <li>{{cart}}</li>
-        <p>Total: ${{ totalPrice }}</p>
+        <li v-for="item in store.cart" :key="item.name">{{item.name}}, ${{ item.price }}</li>
+        <p>Total: ${{ store.totalPrice }}</p>
     </div>
 </template>
 

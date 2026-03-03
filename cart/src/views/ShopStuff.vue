@@ -1,13 +1,14 @@
 <template>
     <div>
     <ShopCard v-for="item in items" :key="item.name" :item="item">
-        <button>Add to Cart</button>
+        <button @click="store.addToCart(item)">Add to Cart</button>
     </ShopCard>
     </div>
 </template>
 
 <script setup>
 import {ref} from 'vue'
+import { store } from '@/stores/store';
 import ShopCard from './ShopCard.vue';
 defineProps({
     addToCart:{
