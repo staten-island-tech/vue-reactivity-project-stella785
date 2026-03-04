@@ -8,5 +8,3 @@ export const store = reactive({
     this.totalPrice += item.price
   },
 })
-
-export {addToCart}
