@@ -15,5 +15,9 @@ import { store } from '@/stores/store';
 </script>
 
 <style scoped>
-
+.cart {
+    border-style: solid;
+    padding: 20px;
+    width: 30%;
+}
 </style>

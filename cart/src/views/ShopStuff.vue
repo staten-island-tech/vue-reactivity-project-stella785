@@ -40,10 +40,5 @@ const items = ref([
 </script>
 
 <style scoped>
-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #BDBDBD;
-}
+
 </style>

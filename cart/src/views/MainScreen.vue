@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>Shop</h1>
+    <h1>Shop</h1>
+    <div class="container">
         <ShopStuff />
         <BuyList />
     </div>
@@ -16,5 +16,11 @@ import BuyList from './BuyList.vue';
 <style scoped>
 h1{
     text-align: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 </style>
