@@ -7,7 +7,6 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
 import ShopStuff from './ShopStuff.vue';
 import BuyList from './BuyList.vue';
 
@@ -15,7 +14,12 @@ import BuyList from './BuyList.vue';
 
 <style scoped>
 h1{
+    background-color: antiquewhite;
     text-align: center;
+    border-radius: 25px;
+    font-size: 50px;
+    margin: 20px;
+    padding: 10px;
 }
 .container {
     display: flex;

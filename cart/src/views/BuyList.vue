@@ -1,6 +1,6 @@
 <template>
     <div class="cart">
-        <h1>Cart</h1>
+        <h1>Your cart:</h1>
         <ul>
             <li v-for="item in store.cart" :key="item.name">{{ item.name }}, ${{ item.price }}</li>
         </ul>
@@ -16,8 +16,11 @@ import { store } from '@/stores/store';
 
 <style scoped>
 .cart {
+    background-color:aliceblue;
+    border-radius: 25px;
     border-style: solid;
     padding: 20px;
     width: 30%;
+    margin: 10px;
 }
 </style>

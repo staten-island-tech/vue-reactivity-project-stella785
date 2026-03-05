@@ -23,7 +23,8 @@ defineProps({
 
 <style scoped>
 .shoe-card {
-    background-color: #ffffff;
+    background-color: #fff5f5;
+    border-radius: 25px;
     width: 50%;
     border: 3px solid #000000;
     margin: 10px;
@@ -40,7 +41,6 @@ h3 {
 }
 img {
     height: 100px;
-    
 }
 
 </style>

@@ -40,5 +40,9 @@ const items = ref([
 </script>
 
 <style scoped>
-
+button {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: beige;
+}
 </style>
