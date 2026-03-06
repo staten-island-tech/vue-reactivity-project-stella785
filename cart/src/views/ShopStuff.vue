@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="shop-container">
     <ShopCard v-for="item in items" :key="item.name" :item="item">
         <button @click="store.addToCart(item)">Add to Cart</button>
     </ShopCard>
@@ -44,5 +44,9 @@ button {
     border-radius: 25px;
     padding: 10px;
     background-color: beige;
+}
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 </style>
